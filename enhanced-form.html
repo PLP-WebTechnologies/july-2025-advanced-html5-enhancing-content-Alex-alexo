@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Mastering Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    fieldset {
+      border: 2px solid #2c3e50;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    legend {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML5 Content Showcase</h1>
+
+  <!-- Lists -->
+  <h2>Top 3 Web Development Skills</h2>
+  <ol>
+    <li>HTML5 & Semantic Structure</li>
+    <li>CSS3 & Responsive Design</li>
+    <li>JavaScript & Frameworks</li>
+  </ol>
+
+  <!-- Table -->
+  <h2>Course Schedule</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Topic</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>HTML5 & Accessibility</td>
+        <td>2 hours</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>CSS & Layout</td>
+        <td>3 hours</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Forms & Validation</td>
+        <td>2 hours</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Media -->
+  <h2>Media Example</h2>
+  <p>Watch this short demo video:</p>
+  <video src="sample.mp4" controls width="400"></video>
+  <p>Or listen to the audio version:</p>
+  <audio src="sample.mp3" controls></audio>
+
+  <hr>
+
+  <!-- Form -->
+  <h1>Registration Form</h1>
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Details</legend>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6">
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+
+      <label for="role">Select Role:</label>
+      <select id="role" name="role" required>
+        <option value="">--Choose an option--</option>
+        <option value="student">Student</option>
+        <option value="instructor">Instructor</option>
+        <option value="admin">Administrator</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label>
+        <input type="checkbox" name="newsletter" value="yes"> Subscribe to newsletter
+      </label>
+
+      <label>Preferred Contact Method:</label>
+      <label><input type="radio" name="contact" value="email" required> Email</label>
+      <label><input type="radio" name="contact" value="phone"> Phone</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <textarea name="comments" rows="4" placeholder="Write your message here..."></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
